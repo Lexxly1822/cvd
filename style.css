@@ -263,6 +263,13 @@ header {
   background-color: var(--clr-dark);
 }
 
+.btn--transparent {
+  background-color: transparent;
+  color: var(--clr-dark);
+  font-weight: 500;
+  border: 2px solid var(--clr-dark);
+}
+
 .banner__image {
   position: relative;
   display: inline-block;
@@ -640,6 +647,265 @@ footer {
   width: 100%;
 }
 
+/* DITO NA Contact Section */
+.contact-section {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  padding: 11rem 0;
+  align-content: center 0;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: start;
+}
+
+.contact-info h2 {
+  color: var(--clr-primary);
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.contact-info p {
+  font-weight: 300;
+  margin-bottom: 3rem;
+  max-width: 450px;
+}
+
+.contact-info ul {
+  list-style: none;
+  margin-bottom: 4rem;
+  gap: 40rem;
+}
+
+.contact-info ul li {
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.contact-info i {
+  color: var(--clr-primary);
+  font-size: 1.8rem;
+}
+
+.contact-socials i {
+  margin-right: 1rem;
+  color: var(--clr-light);
+  font-size: 2rem;
+  gap: 5px;
+  transition: color 0.3s ease;
+}
+
+.contact-socials a {
+  margin-right: 1.5rem;
+  gap: 1rem;
+  color: var(--clr-primary);
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+.contact-socials a:hover {
+  color: var(--clr-primary);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  margin-bottom: 2rem;
+  background-color: #f5f5f5;
+  font-size: 1.4rem;
+  resize: none;
+}
+
+.contact-form button {
+  align-self: end;
+  padding: 1.5rem 3rem;
+  border: none;
+  border-radius: 5rem;
+  background-color: var(--clr-primary);
+  color: var(--clr-dark);
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #e69500;
+}
+
+.footer-line {
+  border: none;
+  height: 2px;
+  font-weight: 200;
+  background-color: var(--clr-gray);
+  margin: 0 auto 20px auto;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*updates page*/
+.blog {
+  padding: 11rem 0;
+}
+
+.blog__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+.blog__title {
+  margin-bottom: 11rem;
+}
+
+.blog__title h2 {
+  color: var(--clr-primary);
+  font-size: 4.6rem;
+  font-weight: 600;
+}
+
+.blog__title p {
+  color: var(--clr-dark);
+  font-weight: 400;
+  margin-bottom: 4rem;
+  font-size: 0.2rem;
+}
+
+.blog__content__img {
+  width: block;
+  height: auto;
+  display: block;
+}
+
+.blog__content__meta {
+  margin: 2rem 0;
+}
+
+.blog__content__meta ul {
+  display: flex;
+  gap: 4rem;
+}
+
+.blog__content__meta ul ul a {
+  color: var(--clr-dark);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.blog__content__description h2 {
+  color: var(--clr-primary);
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin: 3rem 0;
+}
+.blog__content__description p {
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+
+.blog__content__description a {
+  color: var(--clr-primary);
+}
+
+.blog__content__description span {
+  display: block;
+  height: 2px;
+  background-color: #f5f5f5;
+  width: 100%;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+.blog__categories h3 {
+  text-transform: uppercase;
+  color: var(--clr-primary);
+  font-weight: 600;
+  font-size: 2.1rem;
+  margin-bottom: 3rem;
+}
+
+.blog__categories ul li a {
+  display: flex;
+  justify-content: space-between;
+  color: var(--clr-dark);
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+.horizontal-line {
+  display: block;
+  height: 2px;
+  background-color: #f5f5f5;
+  width: 100%;
+  margin-top: 11.4rem;
+}
+
+.blog__recent h3 {
+  text-transform: uppercase;
+  color: var(--clr-primary);
+  font-weight: 600;
+  font-size: 2.1rem;
+  margin-bottom: 5rem;
+  margin-top: 10rem;
+}
+
+.blog__recent ul li {
+  margin-bottom: 4rem;
+}
+.blog__content__description p {
+  display: flex;
+  color: var(--clr-dark);
+  gap: 2rem;
+}
+.blog__content__description h4 {
+  font-weight: 700;
+}
+
+.blog__recent ul li a img {
+  width: 100%;
+  display: block;
+  height: auto;
+  max-width: 103px;
+  max-height: 103px;
+}
+
+.blog__recent__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blog__tags h3 {
+  text-transform: uppercase;
+}
+
+.blog__tags a {
+  margin: 0.8rem;
+}
+
+.blog__tags a:hover {
+  transition: all 0.3 ease-in-out;
+  background-color: var(--clr-dark);
+  color: var(--clr-dark);
+}
+
 /* ==== Breakpoints (desktop-First) ==== */
 /* Large Laptops (1200px and below) */
 @media (max-width: 1200px) {
@@ -668,6 +934,10 @@ footer {
   .services__wrapper {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .blog__wrapper {
+    display: grid;
   }
 
   .services__item p {
@@ -742,8 +1012,9 @@ footer {
     z-index: -1;
   }
 
-  .navbar nav.open {
+  .navbar__nav.open {
     left: 0;
+    z-index: 1000;
   }
 
   .navbar__nav__list {
@@ -756,6 +1027,43 @@ footer {
 @media (max-width: 768px) {
   .banner__image {
     display: none;
+  }
+  .blog__content__meta ul li a {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
+
+/*dito girl*/
+
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    text-align: center;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info ul {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .contact-socials {
+    justify-content: center;
+    display: flex;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form button {
+    align-self: center;
   }
 }
 
@@ -802,4 +1110,20 @@ footer {
 
 /* Small Mobile (400px = 40rem */
 @media (max-width: 400px) {
+  .blog__content__meta ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .blog__content__meta {
+    margin: 1rem 0;
+  }
+  .contact-info ul li {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+.contact-form button {
+  display: block;
+  width: 100%;
 }
